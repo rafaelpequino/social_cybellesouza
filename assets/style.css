@@ -1,0 +1,515 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --first-color: #5400AD;
+    --second-color: #0b000d;
+    --third-color: #7C219B;
+    --black-color: #0f0f0f;
+    --white-color: #ffffff;
+    --font: 'Roboto Condensed', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+/*INÍCIO HOME*/
+
+section#home {
+    width: 100%;
+    height: 100vh;
+    min-height: 800px;
+    background-image: linear-gradient(50deg, #0b000d,#070108);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 40px;
+    z-index: 0;
+}
+
+div#inside-home {
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    max-height: 950px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.home-info {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.home-info > h4 {
+    color: var(--white-color);
+    font-weight: 500;
+    opacity: .9;
+    font-size: 1.6em;
+    padding: 5px;
+    background-color: var(--third-color);
+    width: max-content;
+}
+
+.home-info > h1 {
+    color: var(--white-color);
+    font-weight: 900;
+    font-size: 5em;
+    line-height: .9em;
+    margin-top: 10px;
+}
+
+.talk-to-me {
+    display: block;
+    margin-top: 50px;
+    background-color: var(--white-color);
+    color: var(--black-color);
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 600;
+    z-index: 10;
+}
+
+.talk-to-me-reverse {
+    display: block;
+    margin-top: 50px;
+    background-color: var(--black-color);
+    color: var(--white-color);
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 600;
+    z-index: 10;
+}
+
+.home-cybelle-picture {
+    width: max-content;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 60px;
+
+}
+
+.home-cybelle-picture > img {
+    height: 95%;
+    min-height: 700px;
+    max-height: 1200px;
+    object-fit: cover;
+    object-position: top right; 
+}
+
+.home-cybelle-picture-little {
+    display: none;
+}
+
+
+@media (max-width: 1150px) {
+
+    .home-info > h1 {
+        font-size: 4em;
+    }
+}
+
+
+@media (max-width: 1000px) {
+
+    section#home {
+        height: max-content;
+        min-height: none;
+        min-height: 100vh;
+        padding: 20px 20px 60px 20px;
+    }
+
+    section#home:before {
+        background-color: rgba(0, 0, 0, 0.700);
+    }
+    
+    div#inside-home {
+        height: max-content;
+        max-height: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home-info {
+        width: 100%;
+    }
+
+    .home-info > h4 {
+        text-align: center;
+        margin: auto;
+    }
+
+    .home-info > h1 {
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .home-info > a {
+        margin: 50px auto 0;
+
+    }
+
+    
+    .home-cybelle-picture {
+        display: none;
+    }
+    
+    .home-cybelle-picture-little {
+        width: max-content;
+        width: 80vw;
+        max-width: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-bottom: -40px;
+    }
+    
+    .home-cybelle-picture-little > img {
+        width: 100%;
+    }
+
+}
+
+/*FIM HOME*/
+
+
+
+/*INÍCIO TITLE*/
+
+.title {
+    font-size: 4em;
+    font-weight: 900;
+}
+
+.title > span {
+    color: var(--third-color);
+}
+
+.subtitle {
+    font-size: 1.5em;
+    font-weight: 600;
+    opacity: .6;
+}
+
+.white {
+    color: var(--white-color);
+}
+
+.center {
+    text-align: center;
+}
+
+.margin-bottom {
+    margin-bottom: 30px;
+}
+
+
+.block-title {
+    width: 100%;
+}
+
+@media (max-width: 1080px) {
+    .title {
+        font-size: 3.5em;
+    }
+}
+
+@media (max-width: 750px) {
+    .title {
+        font-size: 3em;
+    }
+
+    .subtitle {
+        font-size: 1.3em;
+    }
+}
+
+@media (max-width: 500px) {
+    .title {
+        font-size: 2.5em;
+    }
+
+    .subtitle {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 350px) {
+    .title {
+        font-size: 2em;
+    }
+
+    .subtitle {
+        font-size: .9em;
+    }
+}
+
+/*FIM TITLE*/
+
+
+/*INÍCIO SOBRE MIM*/
+
+section#sobre-mim {
+    width: 100%;
+    height: max-content;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background-color: var(--second-color);
+}
+
+div#inside-sobre-mim {
+    width: 100%;
+    max-width: 1000px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+.text-about-me {
+    font-size: 1.2em;
+    opacity: .8;
+    color: var(--white-color);
+    text-align: center;
+    margin: 0;
+}
+
+.my-description {
+    width: 100%;
+    background-color: var(--black-color);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.my-info {
+    width: 48%;
+    text-align: right;
+}
+
+.my-info > img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: calc(100% - 100px);
+    margin-bottom: 20px;
+}
+
+.my-data {
+    font-size: 1.1em;
+    color: var(--white-color);
+    opacity: .8;
+    margin: 20px 0;
+}
+
+.my-data > span {
+    color: var(--third-color);
+}
+
+.box-skills {
+    width: 48%;
+    padding: 20px;
+}
+
+.hard-skills {
+    margin-top: 50px;
+}
+
+.skills-title {
+    color: var(--white-color);
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.list-skills {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px 20px;
+}
+
+.skill {
+    text-align: center;
+    color: var(--white-color);
+
+}
+
+.skill > i {
+    font-size: 1.8em;
+}
+
+.skill-name {
+    margin-top: 10px;
+}
+
+
+@media (max-width: 850px) {
+
+    section#sobre-mim {
+        padding: 40px 20px;
+    }
+
+    .my-description {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .my-info {
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
+        margin: auto;
+    }
+
+    .my-info > img {
+        width: 150px;
+        height: 150px;
+        margin: auto;
+    }
+
+    .box-skills {
+        width: 100%;
+        padding: 0;
+    }
+    
+
+}
+
+@media (max-width: 500px) {
+    .list-skills {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px 10px;
+    }
+
+    .skill > i {
+        font-size: 1.8em;
+    }
+    
+    .skill-name {
+        font-size: .9em;
+        margin-top: 5px;
+    }
+    
+}
+
+/*FIM ABOUT-ME*/
+
+
+
+
+/*INÍCIO SERVIÇOS*/
+
+section#services {
+    min-height: calc(100vh - 90px);
+    background-color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+div#inside-services {
+    width: 100%;
+    max-width: 1200px;
+}
+
+.list-services {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+    margin: 60px 0px 80px;
+    padding: 0 20px;
+}
+
+.service-icon {
+    color: var(--first-color);
+    font-size: 3em;
+    text-align: center;
+}
+
+.service-name {
+    color: var(--black-color);
+    font-size: 1.2em;
+    text-align: center;
+    margin: 5px 0 15px;
+}
+
+.service-description {
+    color: var(--black-color);
+    font-size: .9em;
+    opacity: .7;
+    text-align: center;
+}
+
+@media (max-width: 700px) {
+    .list-services {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 50px;
+        padding: 0;
+    }
+}
+
+/*FIM SERVIÇOS*/
+
+
+
+/*INÍCIO FOOTER*/
+
+footer {
+    background-color: var(--black-color);
+    border-top: 1px solid rgb(200, 200, 200);
+}
+
+.autorized {
+    text-align: center;
+    opacity: .8;
+    padding: 30px;
+    border-top: 1px solid rgba(0, 0, 0, 0.100);
+    color: var(--white-color);
+}
+
+.autorized > span {
+    font-size: 1.1rem;
+    opacity: 1;
+    color: var(--third-color);
+    font-weight: 500;
+}
+
+/*FIM FOOTER*/
