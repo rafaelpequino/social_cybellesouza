@@ -410,6 +410,13 @@ div#inside-sobre-mim {
 
 @media (max-width: 500px) {
 
+    .list-skills {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px 20px;
+    }
+
     .skill > i {
         font-size: 1.8em;
     }
