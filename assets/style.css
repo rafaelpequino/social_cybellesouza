@@ -435,7 +435,7 @@ div#inside-sobre-mim {
 /*INÍCIO SERVIÇOS*/
 
 section#services {
-    min-height: calc(100vh - 90px);
+    min-height: 100vh;
     background-color: var(--white-color);
     display: flex;
     flex-direction: column;
