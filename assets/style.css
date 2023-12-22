@@ -306,7 +306,7 @@ div#inside-sobre-mim {
 
 .my-description {
     width: 100%;
-    background-color: var(--black-color);
+    background-color: var(--white-color);
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -315,7 +315,7 @@ div#inside-sobre-mim {
 }
 
 .my-info {
-    width: 48%;
+    width: 38%;
     text-align: right;
 }
 
@@ -329,7 +329,7 @@ div#inside-sobre-mim {
 
 .my-data {
     font-size: 1.1em;
-    color: var(--white-color);
+    color: var(--black-color);
     opacity: .8;
     margin: 20px 0;
 }
@@ -339,7 +339,7 @@ div#inside-sobre-mim {
 }
 
 .box-skills {
-    width: 48%;
+    width: 55%;
     padding: 20px;
 }
 
@@ -348,7 +348,7 @@ div#inside-sobre-mim {
 }
 
 .skills-title {
-    color: var(--white-color);
+    color: var(--black-color);
     font-size: 1.5em;
     text-align: center;
     margin-bottom: 30px;
@@ -363,8 +363,7 @@ div#inside-sobre-mim {
 
 .skill {
     text-align: center;
-    color: var(--white-color);
-
+    color: var(--black-color);
 }
 
 .skill > i {
